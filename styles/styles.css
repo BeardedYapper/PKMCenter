@@ -66,6 +66,11 @@ body{
   width: 95px;
   height: 95px;
 }
+
+.logo-image:hover{
+	border-radius: 50%;
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
 /* Animation webkit */
 @-webkit-keyframes myfirst
 {
@@ -266,12 +271,8 @@ footer > center > label{
 .container{
 	text-align: center;
 	background-color: var(--pink);
-<<<<<<< HEAD
 	padding-top: 0;
 	height: fit-content;
-=======
-	margin-top: 0;
->>>>>>> c9473b49d234549a6f15024863fba97dfe7e9b64
 }
 
 .column {
@@ -300,6 +301,66 @@ footer > center > label{
 	color: var(--green);
 	margin-top: 0;
 	text-align: center;
+}
+
+
+
+/* HOMEPAGE */
+
+.banner {
+	height: 40vh;
+	width: 100vw;
+	background-color: var(--gray);
+}
+
+.banner-container {
+		padding: 2vh 10vw;
+}
+
+.healball {
+		height: 40%;
+		position: absolute;
+}
+
+.pokecare-logo {
+		height: 100%;
+		padding-left: 30%;
+}
+
+.phrase-logo {
+		position: absolute;
+		right: 15vw;
+		font-family: Mplus 1p;
+		font-style: normal;
+		font-weight: normal;
+		text-shadow: 0px 4px 10px #000000;
+		font-size: 48px;
+}
+
+.content {
+		padding: 2% 10%;
+		background-color: var(--pink);
+}
+
+.content > p {
+		white-space: pre-wrap;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 24px;
+		line-height: 28px;
+		text-align: center;
+}
+
+.services-buttons {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+}
+
+.services-buttons > a {
+		background-image: url("/images/game-button.png");
+		background-color: #cccccc;
 }
 
 @media (max-width: 768px){
@@ -362,62 +423,4 @@ footer > center > label{
   footer{
 	  height: 300px;
   }
-}
-
-/* HOMEPAGE */
-
-.banner {
-	height: 40vh;
-	width: 100vw;
-	background-color: var(--gray);
-}
-
-.banner-container {
-		padding: 2vh 10vw;
-}
-
-.healball {
-		height: 40%;
-		position: absolute;
-}
-
-.pokecare-logo {
-		height: 100%;
-		padding-left: 30%;
-}
-
-.phrase-logo {
-		position: absolute;
-		right: 15vw;
-		font-family: Mplus 1p;
-		font-style: normal;
-		font-weight: normal;
-		text-shadow: 0px 4px 10px #000000;
-		font-size: 48px;
-}
-
-.content {
-		padding: 2% 10%;
-		background-color: var(--pink);
-}
-
-.content > p {
-		white-space: pre-wrap;
-		font-family: Roboto;
-		font-style: normal;
-		font-weight: 300;
-		font-size: 24px;
-		line-height: 28px;
-		text-align: center;
-}
-
-.services-buttons {
-		width: 100%;
-		display: flex;
-		justify-content: space-between;
-}
-
-.services-buttons > a {
-		background-image: url("/images/game-button.png");
-		background-color: #cccccc;
 }
