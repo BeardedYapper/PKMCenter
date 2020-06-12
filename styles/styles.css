@@ -19,26 +19,45 @@ body{
 	padding: 0;
 	margin: 0;
 	font-family: var(--secondary-font);
+	background-color: var(--pink);
 }
 
-.header{
+.header-desktop{
   display: flex;
   height: 95px;
   background-color: var(--red);
   color: var(--green);
+  font-family: var(--primary-font);
   justify-content: space-between;
 }
 
-.header> a{
+.header-desktop> a{
   font-weight: bold;
   text-align: center;
-  margin: auto  20px;
+  margin: auto  120px;
   text-decoration: none;
   font-size: 70px;
   font-family: var(--primary-font);
   color: var(--black);
 }
 
+.header-mobile{
+	display: none;
+	height: 95px;
+	background-color: var(--red);
+	color: var(--green);
+	justify-content: space-between;
+  }
+  
+  .header-mobile> a{
+	font-weight: bold;
+	text-align: center;
+	margin: auto  30px;
+	text-decoration: none;
+	font-size: 70px;
+	font-family: var(--primary-font);
+	color: var(--black);
+  }
 .logo{
   margin: 0px;
 }
@@ -233,60 +252,8 @@ footer > center > label{
 	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);	
 }
 
-@media (max-width: 768px){
- .pokeball{ 	display: none;	 }
- .header> a{
-	margin-right: 162px;
-	font-size: 90px;	
-  }
-  #services{
-	  display: none;
-  }
-  form{
-	margin: 100px auto;
-}
-footer{
-	height: 300px;
-}
-}
 
-@media (max-width: 420px){
-
-.header> a{
-  margin-right: 162px;
-  font-size: 50px;
-}
-#services{
-	display: none;
-}
-  
- .pokeball{ 	display: none;	 }
-  
-  form{
-	margin: 70px auto;
-	width: 350px;
-  	padding: 10px;
-}
-
-input, textarea, button{
-	width: 350px;	
-	border-radius: 10px;
-}
-
-textarea{
-	height: 70px;	
-}
-  
-label{
-	font-size: 1.5em;
-	margin-top: 15px;
-}
-footer{
-	height: 300px;
-}
-}
-
-/* */
+/* SERVICES*/
 .serviceicon{
     width: 70px;
     padding: 5px;
@@ -300,39 +267,95 @@ footer{
 	text-align: center;
 	background-color: var(--pink);
 	padding-top: 0;
+	height: fit-content;
 }
 
 .column {
     float: left;
-    width: 25%;
     padding: 0 10px;
 }
 
-.row {margin: 0 -5px;}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+.row {
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+	align-items: center;
 }
 
-@media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-}
 
 .service {
     padding: 16px;
     text-align: center;
     background-color: #fff;
-    margin-bottom: 20px;
-    height: 300px;
+	height: 400px;
+	margin: 20px;
+    width: 25%;
 }
 
 .title{
 	color: var(--green);
+	margin-top: 0;
+	text-align: center;
 }
 
+@media (max-width: 768px){
+	.pokeball{ 	display: none;	 }
+   .header-desktop{
+	   display: none;
+   }
+   .header-mobile{
+	   display: flex;
+   }
+   .header-mobile > a{
+	   font-size: 90px;
+   }
+   
+	 form{
+	   margin: 100px auto;
+   }
+   footer{
+	   height: 300px;
+   }
+   
+   .row {
+	flex-direction: column;
+}
+.service{
+	width: 60%;
+	height: 250px;
+}
+   }
+
+   
+@media (max-width: 420px){
+	.header-desktop{
+		  display: none;
+	  }
+	  .header-mobile > a{
+		  font-size: 60px;
+	  }
+   .pokeball{ 	display: none;	 }
+	
+	form{
+	  margin: 70px auto;
+	  width: 350px;
+		padding: 10px;
+  }
+  
+  input, textarea, button{
+	  width: 350px;	
+	  border-radius: 10px;
+  }
+  
+  textarea{
+	  height: 70px;	
+  }
+	
+  label{
+	  font-size: 1.5em;
+	  margin-top: 15px;
+  }
+  footer{
+	  height: 300px;
+  }
+  }
