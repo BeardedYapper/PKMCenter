@@ -344,7 +344,6 @@ footer > center > label{
 
 .content > p {
 		white-space: pre-wrap;
-		font-family: Roboto;
 		font-style: normal;
 		font-weight: 300;
 		font-size: 24px;
@@ -363,6 +362,97 @@ footer > center > label{
 		background-color: #cccccc;
 }
 
+
+/* HOMEPAGE */
+
+.header-index{
+	display: flex;
+	height: 95px;
+	background-color: var(--red);
+	color: var(--green);
+	font-family: var(--primary-font);
+	justify-content: space-between;
+  }
+  
+  .header-index> a{
+	font-weight: bold;
+	text-align: center;
+	margin: auto  120px;
+	text-decoration: none;
+	font-size: 70px;
+	font-family: var(--primary-font);
+	color: var(--black);
+  }
+
+.banner {
+	height: 40vh;
+	width: 100vw;
+	background-color: var(--gray);
+	
+}
+
+.banner-container {
+
+}
+.banner-img {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+.healball {
+		height: 40%;
+		display: inline;
+}
+
+.pokecare-logo {
+	display: inline;
+		height: 100%;
+}
+
+.phrase-logo {
+		font-family: Mplus 1p;
+		font-style: normal;
+		font-weight: normal;
+		text-shadow: 0px 4px 10px #000000;
+		font-size: 48px;
+}
+
+.content {
+		padding: 2% 10%;
+		background-color: var(--pink);
+}
+
+.content > p {
+		white-space: pre-wrap;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 24px;
+		line-height: 28px;
+		text-align: center;
+}
+
+.services-buttons {
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+	align-items: center;
+	text-align: center;
+}
+
+.services-buttons > div {
+		margin: 15x;
+		padding: 50px;
+		min-height: 5vh;
+		background: no-repeat url("../images/game-button.png") 50% / 100%;
+}
+.services-buttons > div > a {
+	font-size: 1.5em;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
 @media (max-width: 768px){
 	.pokeball{ 	display: none;	 }
    .header-desktop{
@@ -374,7 +464,22 @@ footer > center > label{
    .header-mobile > a{
 	   font-size: 90px;
    }
+
+   .banner-img{
+	width: 700px;
+    height: 300px;
+   }
+
+   .header-index >a{
+	font-size: 40px;
+    margin: auto 60px;
+   }
    
+   .services-buttons{
+	width: 300px;
+	flex-direction: column;
+	margin-left: 200px;
+   }
 	 form{
 	   margin: 100px auto;
    }
@@ -423,69 +528,4 @@ footer > center > label{
   footer{
 	  height: 300px;
   }
-}
-
-/* HOMEPAGE */
-
-.banner {
-	height: 40vh;
-	width: 100vw;
-	background-color: var(--gray);
-	
-}
-
-.banner-container {
-
-}
-.banner-img {
-	display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-}
-
-.healball {
-		height: 40%;
-		display: inline;
-}
-
-.pokecare-logo {
-	display: inline;
-		height: 100%;
-}
-
-.phrase-logo {
-		font-family: Mplus 1p;
-		font-style: normal;
-		font-weight: normal;
-		text-shadow: 0px 4px 10px #000000;
-		font-size: 48px;
-}
-
-.content {
-		padding: 2% 10%;
-		background-color: var(--pink);
-}
-
-.content > p {
-		white-space: pre-wrap;
-		font-family: Roboto;
-		font-style: normal;
-		font-weight: 300;
-		font-size: 24px;
-		line-height: 28px;
-		text-align: center;
-}
-
-.services-buttons {
-		width: 100%;
-		display: flex;
-		justify-content: space-between;
-}
-
-.services-buttons > a > label {
-		margin: 15x;
-		padding: 50px;
-		min-height: 5vh;
-		background: no-repeat url("../images/game-button.png") 50% / 100%;
 }
