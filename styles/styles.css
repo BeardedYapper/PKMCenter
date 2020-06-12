@@ -288,4 +288,7 @@ label{
     height: 300px;
 }
 
+.title{
+	color: var(--green);
+}
 
