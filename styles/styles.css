@@ -13,9 +13,9 @@
 }
 
 
-body, html{
+body{
 	height: 100%;
-  overflow: auto;
+    overflow: auto;
 	padding: 0;
 	margin: 0;
 	font-family: var(--secondary-font);
@@ -124,9 +124,6 @@ body, html{
    animation-delay: 23s;
 	-webkit-animation-delay: 23s;
 }
-#pokeball10{
-	top: 1100px;
-}
 
 
 #form{
@@ -198,6 +195,44 @@ label{
 	padding-left: 20px;
 }
 
+footer{
+  display: block;
+  height: fit-content;
+  background-color: var(--pink);
+  color: var(--green);
+  justify-content: space-between;
+}
+footer > center > label{
+	margin-top: 0;
+}
+
+.footer-Bpokeball{
+	display: flex;
+	justify-content: center;
+}
+
+.footer-Cpokeball{
+	display: flex;
+	justify-content: center;
+}
+
+.black-pokeball{
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+.black-pokeball > img:hover{
+	border-radius: 50%;
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);	
+}
+
+.color-pokeball{
+	margin-top: 0px;
+}
+.color-pokeball > img:hover{
+	border-radius: 50%;
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);	
+}
+
 @media (max-width: 768px){
  .pokeball{ 	display: none;	 }
  .header> a{
@@ -207,6 +242,12 @@ label{
   #services{
 	  display: none;
   }
+  form{
+	margin: 100px auto;
+}
+footer{
+	height: 300px;
+}
 }
 
 @media (max-width: 420px){
@@ -239,5 +280,8 @@ textarea{
 label{
 	font-size: 1.5em;
 	margin-top: 15px;
+}
+footer{
+	height: 300px;
 }
 }
