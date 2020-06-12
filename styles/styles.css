@@ -285,3 +285,54 @@ footer{
 	height: 300px;
 }
 }
+
+/* */
+.serviceicon{
+    width: 70px;
+    padding: 5px;
+}
+
+.content{
+    box-sizing: border-box;
+}
+
+.container{
+	text-align: center;
+	background-color: var(--pink);
+	padding-top: 0;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+.row {margin: 0 -5px;}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+}
+
+.service {
+    padding: 16px;
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 20px;
+    height: 300px;
+}
+
+.title{
+	color: var(--green);
+}
+
