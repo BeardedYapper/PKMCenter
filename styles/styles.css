@@ -422,5 +422,5 @@ footer > center > label{
 		margin: 15x;
 		padding: 50px;
 		min-height: 5vh;
-		background: no-repeat url(../images/game-button.png) 50% / 100%;
+		background: no-repeat url("../images/game-button.png") 50% / 100%;
 }
