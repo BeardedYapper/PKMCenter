@@ -266,8 +266,12 @@ footer > center > label{
 .container{
 	text-align: center;
 	background-color: var(--pink);
+<<<<<<< HEAD
 	padding-top: 0;
 	height: fit-content;
+=======
+	margin-top: 0;
+>>>>>>> c9473b49d234549a6f15024863fba97dfe7e9b64
 }
 
 .column {
