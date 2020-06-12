@@ -299,7 +299,7 @@ footer{
 .container{
 	text-align: center;
 	background-color: var(--pink);
-	padding-top: 0;
+	margin-top: 0;
 }
 
 .column {
